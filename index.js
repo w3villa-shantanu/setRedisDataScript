@@ -2,9 +2,9 @@ const redis = require("redis");
 const redisclient = redis.createClient(
 	{
 		socket: {
-            port: 6379,
-            //`host: "127.0.0.1",
-	    	host: 'superone-game-royale-0001-001.jlnwgb.0001.euw2.cache.amazonaws.com'
+            // port: 6379,
+            // //`host: "127.0.0.1",
+	    	// host: 'superone-game-royale-0001-001.jlnwgb.0001.euw2.cache.amazonaws.com'
         }
 	}
 );
