@@ -1,8 +1,7 @@
 const redis = require("redis");
 const redisclient = redis.createClient(
 	{
-		host: 'superone-game-royale-0001-001.jlnwgb.0001.euw2.cache.amazonaws.com',
-		port: 6379
+		url : 'superone-game-royale-0001-001.jlnwgb.0001.euw2.cache.amazonaws.com:6379',
 	}
 );
 
