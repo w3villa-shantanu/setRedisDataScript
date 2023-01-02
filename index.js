@@ -33,21 +33,21 @@ redisclient.on("error", (err) => {
 	console.log("Error in the Connection");
 });
 
-redisclient.get("game_tag_questions_39_2").then((res) => {
+// redisclient.get("game_tag_questions_39_2").then((res) => {
+//     console.log(res);
+// });
+
+redisclient.set("game_tag_questions_39_2",JSON.stringify(game_tag_questions_39_2)).then((res) => {
     console.log(res);
 });
 
-// redisclient.set("game_tag_questions_39_2",JSON.stringify(game_tag_questions_39_2)).then((res) => {
-//     console.log(res);
-// });
+redisclient.set("game_tag_questions_39_3",JSON.stringify(game_tag_questions_39_3)).then((res) => {
+    console.log(res);
+});
 
-// redisclient.set("game_tag_questions_39_3",JSON.stringify(game_tag_questions_39_3)).then((res) => {
-//     console.log(res);
-// });
-
-// redisclient.set("game_tag_questions_39_1",JSON.stringify(game_tag_questions_39_1)).then((res) => {
-//     console.log(res);
-// });
+redisclient.set("game_tag_questions_39_1",JSON.stringify(game_tag_questions_39_1)).then((res) => {
+    console.log(res);
+});
 
 console.timeEnd("t1");
 
