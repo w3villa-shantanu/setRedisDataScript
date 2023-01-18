@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/w3villa-shantanu/setRedisDataScript#readme",
   "dependencies": {
-    "redis": "^4.5.1"
+    "redis": "^4.5.1",
+    "request": "^2.88.2"
   }
 }
