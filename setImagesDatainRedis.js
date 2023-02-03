@@ -2110,8 +2110,10 @@ let imageDataWithIds = [
             if (err) {
                 console.log(err);
             } else {
-                const base64Image = new Buffer.from(body, 'binary').toString('base64');
-                redisclient.set(`game_image_${currentImage.id}`, base64Image).then((res) => {
+                const base64Image = new Buffer.from(body).toString('base64');
+                const stringifiedBase64Image = JSON.stringify(base64Image);
+
+                redisclient.set(`game_image_${currentImage.id}`, stringifiedBase64Image).then((res) => {
                     console.count("count");
                     console.log("setting key ====>", `game_image_${currentImage.id}`);
                 });
